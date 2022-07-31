@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 style="margin:10px" id="judul">Kegiatan untuk dikerjakan hari ini</h2>
+            <form id="form-kegiatan">
+                <input type="text" id="kegiatan" name="kegiatan" placeholder="Kegiatan..." autocomplete="off">
+                <button type="submit" class="btn btn-sm btn-success" id="btn-simpan">Tambah</button>
+            </form>
+        </div>
+
+        <div class="row">
+            <input type="text" id="pencarian" placeholder="Ketik untuk mencari kegiatan..." autocomplete="off">
+        </div>
+
+        <ul id="list-kegiatan">
+            <li class="item">Belanja bulanan satu <button class="hapus">X</button></li>
+            <li class="item completed">Belajar js dom <button class="hapus">X</button></li>
+            <li class="item">Belajar golang <button class="hapus">X</button></li>
+            <li class="item completed">Olahraga <button class="hapus">X</button></li>
+            <li class="item">Baca buku <button class="hapus">X</button></li>
+        </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
